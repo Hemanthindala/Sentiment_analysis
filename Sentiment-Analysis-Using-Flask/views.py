@@ -74,7 +74,6 @@ def chunk_text(text, max_len=510):
     sentences = text.split(". ")
     chunks = []
     current_chunk = ''
-    print("hi")
     for sentence in sentences:
         # If the chunk is less than max length.
         if len(current_chunk) + len(sentence) < max_len:
